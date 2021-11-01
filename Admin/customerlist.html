@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin | List of Customers</title>
+    <link type="text/css" href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link type="text/css" href="bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
+    <link type="text/css" href="css/theme.css" rel="stylesheet">
+    <link type="text/css" href="images/icons/css/font-awesome.css" rel="stylesheet">
+    <link type="text/css" href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,400,600' rel='stylesheet'>
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png">
+</head>
+
+<body>
+    <div class="navbar navbar-fixed-top">
+        <div class="navbar-inner">
+            <div class="container" style="margin-top:1%">
+                <a class="btn btn-navbar" data-toggle="collapse" data-target=".navbar-inverse-collapse">
+                    <i class="icon-reorder shaded"></i>
+                </a>
+
+                <a class="brand" href="index.php" style="margin-bottom:2%">
+                    Darzi.pk | Admin
+                    </a>
+                <a href="" style="margin-left:19%">
+                    <img src="images/logo.jpg" style="width:150px;height:150px; margin-left: 8em;" alt="">
+                </a>
+
+                <div class="nav-collapse collapse navbar-inverse-collapse">
+                    <ul class="nav pull-right">
+                        <li><a href="#">
+                                    Admin abc
+                                </a></li>
+                        <li class="nav-user dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                <img src="images/tailor.jpg" class="nav-avatar" />
+                                <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="changepassword.php">Change Password</a></li>
+                                <li class="divider"></li>
+                                <li><a href="logout.php">Logout</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.nav-collapse -->
+            </div>
+        </div>
+        <!-- /navbar-inner -->
+    </div>
+    <!-- /navbar -->
+
+
+    <div class="wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="span3">
+                    <div class="sidebar">
+
+
+                        <ul class="widget widget-menu unstyled  style=" background-color: white;border-top: 5px; "">
+
+                            <li><a href="home.html"><i class="menu-icon icon-tasks"></i>Home</a></li>
+
+
+                            <li>
+                                <a class="collapsed" data-toggle="collapse" href="#togglePages">
+                                    <i class="menu-icon icon-cog"></i>
+                                    <i class="icon-chevron-down pull-right"></i><i class="icon-chevron-up pull-right"></i> Tailor Management
+                                </a>
+                                <ul id="togglePages" class="collapse unstyled">
+                                    <li>
+                                        <a href="tailorlist.html">
+                                            <i class="icon-tasks"></i> Tailors List
+                                            <b class="label green pull-right">
+                                                30
+                                            </b>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="manageAllDesigns.html">
+                                            <i class="icon-tasks"></i> Manage Tailor's Designs
+                                            <b class="label orange pull-right">
+                                                2
+                                            </b>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="tailorPendingOrders.html">
+                                            <i class="icon-tasks"></i> Pending Orders
+                                            <b class="label orange pull-right">
+                                                3
+                                            </b>
+
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="tailorReadyOrders.html">
+                                            <i class="icon-tasks"></i> Ready To Deliver
+                                            <b class="label orange pull-right">
+                                                3
+                                            </b>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="tailorDeliveredOrders.html">
+                                            <i class="icon-inbox"></i> Delivered Orders
+                                            <b class="label green pull-right">
+                                                3
+                                            </b>
+
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+
+
+
+                            <li>
+                                <a class="collapsed" data-toggle="collapse" href="#togglePages2">
+                                    <i class="menu-icon icon-cog"></i>
+                                    <i class="icon-chevron-down pull-right"></i><i class="icon-chevron-up pull-right"></i> User Management
+                                </a>
+                                <ul id="togglePages2" class="collapse unstyled">
+                                    <li>
+                                        <a href="customerlist.html">
+                                            <i class="icon-tasks"></i> Customers List
+                                            <b class="label green pull-right">
+                                                30
+                                            </b>
+                                        </a>
+                                    </li>
+
+                                </ul>
+
+                            </li>
+
+
+                            <li>
+                                <a class="collapsed" data-toggle="collapse" href="#togglePages3">
+                                    <i class="menu-icon icon-cog"></i>
+                                    <i class="icon-chevron-down pull-right"></i><i class="icon-chevron-up pull-right"></i> Web Store Management
+                                </a>
+                                <ul id="togglePages3" class="collapse unstyled">
+                                    <li>
+                                        <a href="addProduct.html">
+                                            <i class="icon-tasks"></i> Add Product
+
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="manageProducts.html">
+                                            <i class="icon-tasks"></i> Manage Products
+                                            <b class="label green pull-right">
+                                                30
+                                            </b>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="storePendingOrders.html">
+                                            <i class="icon-tasks"></i> Pending Orders
+                                            <b class="label orange pull-right">
+                                                2
+                                            </b>
+
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="storeReadyOrders.html">
+                                            <i class="icon-tasks"></i> Ready To Deliver
+                                            <b class="label orange pull-right">
+                                                2
+                                            </b>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="storeDeliveredOrders.html">
+                                            <i class="icon-inbox"></i> Delivered Orders
+                                            <b class="label green pull-right">
+                                                2
+                                            </b>
+
+                                        </a>
+                                    </li>
+                                </ul>
+
+                            </li>
+
+
+                            <li>
+                                <a class="collapsed" data-toggle="collapse" href="#togglePages4">
+                                    <i class="menu-icon icon-comments-alt"></i>
+                                    <i class="icon-chevron-down pull-right"></i><i class="icon-chevron-up pull-right"></i> Ratings & Reviews
+                                </a>
+                                <ul id="togglePages4" class="collapse unstyled">
+                                    <li>
+                                        <a href="tailorRating.html">
+                                            <i class="icon-tasks"></i> Tailor Ratings
+                                            <b class="label orange pull-right">
+                                                2
+                                            </b>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="storeRating.html">
+                                            <i class="icon-tasks"></i> Store Items Ratings
+                                            <b class="label orange pull-right">
+                                                2
+                                            </b>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="websiteRating.html">
+                                            <i class="icon-tasks"></i> Website Ratings
+                                            <b class="label orange pull-right">
+                                                3
+                                            </b>
+
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a href="adminupdateProfile.html"><i class="menu-icon icon-tasks"></i>Profile Update</a></li>
+                            <li><a href="logout.php"><i class="menu-icon icon-cog"></i>Logout</a></li>
+
+                        </ul>
+
+
+
+
+
+                    </div>
+                    <!--/.sidebar-->
+                </div>
+                <!--/.span3-->
+
+                <div class="span9">
+                    <div class="content">
+
+                        <div class="module">
+                            <div class="module-head">
+                                <h3>Details of All Customers</h3>
+                            </div>
+                            <div class="module-body table">
+
+
+                                <br />
+
+                                <table cellpadding="0" cellspacing="0" border="0" class="datatable-1 table table-bordered table-striped	 display" width="100%">
+                                    <thead>
+                                        <tr>
+                                            <th>#</th>
+                                            <th>ID</th>
+                                            <th> Name</th>
+                                            <th>Gender</th>
+                                            <th>Phone #</th>
+                                            <th width="50">Email</th>
+                                            <th>Address</th>
+                                            <th>Customer Photo</th>
+                                            <th>Update Info</th>
+                                            <th>Delete</th>
+
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>242</td>
+                                            <td>Abdullah</td>
+                                            <td>Male</td>
+                                            <td>0333-1234567</td>
+                                            <td>abdullah@gmail.com</td>
+                                            <td>House #768, Dastagir Block 7, FB Area</td>
+                                            <td style="min-width: 90px;">
+                                                <img src="images/tailor.jpg" style="width: 150px; height: 150px; " class="img-fluid img-thumbnail" alt="tailorpic">
+                                            </td>
+                                            <td>
+                                                <center>
+                                                    <div class="control-group">
+                                                        <div class="controls">
+                                                            <button type="submit" name="submit" class="btn btn-success">Update Info</button>
+                                                        </div>
+                                                    </div>
+                                                </center>
+                                            </td>
+                                            <td>
+                                                <center>
+                                                    <div class="control-group">
+                                                        <div class="controls">
+                                                            <button type="submit" name="submit" class="btn btn-danger">Delete</button>
+                                                        </div>
+                                                    </div>
+                                                </center>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>243</td>
+                                            <td>Hassan</td>
+                                            <td>Male</td>
+                                            <td>0333-1234567</td>
+                                            <td>hassan@gmail.com</td>
+                                            <td>House #141, Street 7, Dhoraji</td>
+                                            <td class="w-25">
+                                                <img src="images/tailor.jpg" style="width: 150px; height: 150px; " class="img-fluid img-thumbnail" alt="tailorpic">
+                                            </td>
+                                            <td>
+                                                <center>
+                                                    <div class="control-group">
+                                                        <div class="controls">
+                                                            <button type="submit" name="submit" class="btn btn-success">Update Info</button>
+                                                        </div>
+                                                    </div>
+                                                </center>
+                                            </td>
+                                            <td>
+                                                <center>
+                                                    <div class="control-group">
+                                                        <div class="controls">
+                                                            <button type="submit" name="submit" class="btn btn-danger">Delete</button>
+                                                        </div>
+                                                    </div>
+                                                </center>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td>244</td>
+                                            <td>Rahima</td>
+                                            <td>Female</td>
+                                            <td>0333-1234567</td>
+                                            <td>rahima@gmail.com</td>
+                                            <td>House #363, Garden, Saddar</td>
+                                            <td class="w-25">
+                                                <img src="images/tailor.jpg" style="width: 150px; height: 150px; " class="img-fluid img-thumbnail" alt="tailorpic">
+                                            </td>
+                                            <td>
+                                                <center>
+                                                    <div class="control-group">
+                                                        <div class="controls">
+                                                            <button type="submit" name="submit" class="btn btn-success">Update Info</button>
+                                                        </div>
+                                                    </div>
+                                                </center>
+                                            </td>
+                                            <td>
+                                                <center>
+                                                    <div class="control-group">
+                                                        <div class="controls">
+                                                            <button type="submit" name="submit" class="btn btn-danger">Delete</button>
+                                                        </div>
+                                                    </div>
+                                                </center>
+                                            </td>
+                                        </tr>
+                                </table>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                    <!--/.content-->
+                </div>
+                <!--/.span9-->
+            </div>
+        </div>
+        <!--/.container-->
+    </div>
+    <!--/.wrapper-->
+
+    <div class="footer">
+        <div class="container">
+
+
+            <b class="copyright">&copy; 2021 Darzi.pk </b>
+        </div>
+    </div>
+
+    <script src="scripts/jquery-1.9.1.min.js" type="text/javascript"></script>
+    <script src="scripts/jquery-ui-1.10.1.custom.min.js" type="text/javascript"></script>
+    <script src="bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="scripts/flot/jquery.flot.js" type="text/javascript"></script>
+    <script src="scripts/datatables/jquery.dataTables.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.datatable-1').dataTable();
+            $('.dataTables_paginate').addClass("btn-group datatable-pagination");
+            $('.dataTables_paginate > a').wrapInner('<span />');
+            $('.dataTables_paginate > a:first-child').append('<i class="icon-chevron-left shaded"></i>');
+            $('.dataTables_paginate > a:last-child').append('<i class="icon-chevron-right shaded"></i>');
+        });
+    </script>
+</body>
